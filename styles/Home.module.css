@@ -20,6 +20,7 @@
 
 .title {
   margin: 0 0 1rem;
+  margin-top: -100px;
   line-height: 1.15;
   font-size: 3.6rem;
 }
@@ -49,7 +50,7 @@
   margin-top: 3rem;
 }
 
-.card {
+.cardTop {
   margin: 1rem;
   flex-basis: 45%;
   padding: 1.5rem;
@@ -61,26 +62,96 @@
   transition: color 0.15s ease, border-color 0.15s ease;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
+.cardTop:hover,
+.cardTop:focus,
+.cardTop:active {
   color: #0070f3;
   border-color: #0070f3;
 }
 
-.card h3 {
+.cardTop h3 {
   margin: 0 0 1rem 0;
   font-size: 1.5rem;
 }
 
-.card p {
+.cardTop p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.cardBottom {
+  margin: 1rem;
+  flex-basis: 45%;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.cardBottom:hover,
+.cardBottom:focus,
+.cardBottom:active {
+  color: #f30000;
+  border-color: #f30000;
+}
+
+.cardBottom h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.cardBottom p {
   margin: 0;
   font-size: 1.25rem;
   line-height: 1.5;
 }
 
 .logo {
-  height: 1em;
+  height: 90px;
+}
+
+.reactLogo{
+  height: 150px;
+  margin-bottom: -55px;
+  margin-top: -25px;
+}
+
+.titleDescription{
+  font-size: 15px;
+  margin-bottom: 15px;
+  margin-top: -15px;
+}
+
+.footerCredit {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column; /* Add this line to make the content stack vertically */
+  align-content: center;
+  margin-top: -100px;
+}
+
+.footerCredit a {
+  margin-bottom: -25px;
+}
+
+.missionStatement{
+  font-size: 10px;
+}
+
+/* Styles for the triangle background */
+.triangleBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50vw; /* Half of the viewport width */
+  height: 100vh; /* Full viewport height */
+  background-color: #ffffffa8; /* Adjust the color as needed */
+  z-index: -1; /* Ensure the background is behind the content */
 }
 
 @media (max-width: 600px) {

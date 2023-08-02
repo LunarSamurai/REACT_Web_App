@@ -9,56 +9,59 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      <main> 
+          <h1 className={styles.title}>
+            Welcome to REACT!
+          </h1>
+          <h2 className= {styles.titleDescription}>
+              Research. Evaluation. Analytics. Computation. Testing.
+          </h2>
 
-        <p className={styles.description}>
-          Get started by editing <code>pages/index.js</code>
-        </p>
+          <img src="/React_Logo.webp" alt="cyber-secure" className={styles.reactLogo} />
 
+          <p className={styles.description}>
+            Get started by choosing one of the below options. 
+          </p>
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
+          <a href="" className={styles.cardTop}>
+            <h3>Take a Test &rarr;</h3>
+            <p>Take an evaluation designated by your event handler!</p>
           </a>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+          <a href="" className={styles.cardTop}>
+            <h3>View &rarr;</h3>
+            <p>View all tests that are currently added and to the REACT Platform!</p>
           </a>
 
           <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
+            href=""
+            className={styles.cardBottom}
           >
-            <h3>Deploy &rarr;</h3>
+            <h3>Analyze &rarr;</h3>
+            <p>Grab well documented reports of the tests taken.</p>
+          </a>
+
+          <a
+            href=""
+            className={styles.cardBottom}
+          >
+            <h3>Manage &rarr;</h3>
             <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+              Manage your event's designated examinations!
             </p>
           </a>
         </div>
       </main>
 
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
+      <footer className={styles.footerCredit}>
+        <a href="https://cyber-secure.blog/" target="_blank" rel="noopener noreferrer">
+           Powered by <img src="/CyberSecureLogoBanner.png" alt="Cyber-Secure" className={styles.logo} />
         </a>
+        <b className={styles.missionStatement}>A Cyber-Secure Engineering Mission</b>
       </footer>
+
+      {/* Add the triangle background */}
+      <div className={styles.triangleBackground}></div>
 
       <style jsx>{`
         main {
@@ -95,6 +98,8 @@ export default function Home() {
           font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
             DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
         }
+
+
       `}</style>
 
       <style jsx global>{`
